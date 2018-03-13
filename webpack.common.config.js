@@ -15,7 +15,7 @@ module.exports = {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]'
         }, {
-            test: /\.(jpe?g|png|gif)$/,
+            test: /\.(jpe?g|png|gif|mp3)$/,
             exclude: /(node_modules)/,
             loader: 'url-loader?limit=10000'
         }, {
