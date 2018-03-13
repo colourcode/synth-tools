@@ -11,7 +11,10 @@ import FastClick from 'fastclick'
 
 
 const assets = {
-  KickMp3: require('../assets/sound/1.mp3'),
+  BD: require('../assets/sound/1.mp3'),
+  SD: require('../assets/sound/2.mp3'),
+  PD: require('../assets/sound/3.mp3'),
+  HH: require('../assets/sound/4.mp3'),
 }
 
 var FskModem = function() { this.init.apply(this, arguments) };
@@ -125,10 +128,10 @@ const sketch = p => {
   const loadSound = p.loadSound
 
   p.preload = () => {
-      Kick = loadSound(assets.KickMp3);
-      Snare = loadSound('../assets/sound/2.mp3');
-      Percussion = loadSound('../assets/sound/3.mp3');
-      Hat = loadSound('../assets/sound/4.mp3');
+      Kick = loadSound(assets.BD);
+      Snare = loadSound(assets.SD);
+      Percussion = loadSound(assets.PD);
+      Hat = loadSound(assets.HH);
   }
 
   p.setup = () => {
